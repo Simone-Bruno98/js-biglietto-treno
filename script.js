@@ -11,11 +11,11 @@ const scontoanziani = prezzototale / 100 * 40;
 console.log ("prezzo del biglietto senza sconto = " + prezzototale +"€");
 
 if (anniPasseggero < 18) {
-        prezzoFinale = scontogiovani
+        prezzoFinale = scontogiovani.toFixed(2)
 } else if (anniPasseggero > 65) {
-        prezzoFinale = scontoanziani
+        prezzoFinale = scontoanziani.toFixed(2)
 } else {
-        prezzoFinale = prezzototale
+        prezzoFinale = prezzototale.toFixed(2)
 };
 
 
